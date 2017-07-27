@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sudoku</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Andrew Haynes">
+	<meta name="description" content="Sudoku">
+	<meta name="keywords" content="html,css, sudoku, puzzle">
+	<link rel="stylesheet" type="text/css" href="HaynesAndrew.css">
+
+	<script>
+		function allowDrop(ev)
+			{
+				ev.preventDefault();
+			}
+
+		function drag(ev)
+			{
+				ev.dataTransfer.setData("Text",ev.target.id);
+			}
+		function drop(ev)
+			{
+				var data=ev.dataTransfer.getData("Text");
+				ev.target.appendChild(document.getElementById(data));
+				ev.preventDefault();
+			}
+	</script>
+
+</head>
+<body class="sudoku_body">
+	<header class="sudoku_header">Sudoku</header>
+	<div id="nav">
+		<div id="menu_icon">
+			<div class="menu_icon"></div>
+			<div class="menu_icon"></div>
+			<div class="menu_icon"></div>
+		<div id="dropdown_menu">
+
+			<ul class="dropdown_items">
+				<li><a class="index_nav" href="HaynesAndrew_Index.html">Homepage</a></li>
+				<li><a class="index_nav" href="HaynesAndrewAssignment1.html">Banana Lumpia</a></li>
+				<li><a class="index_nav" href="HaynesAndrewAssignment2.html">SoloLearn</a></li>
+				<li><a class="index_nav" href="HaynesAndrewAssignment3.html">Growing Flowers</a></li>
+				<li><a class="index_nav" href="HaynesAndrewAssignment4_shell.html">Weather</a></li>
+				<li><a class="index_nav" href="HaynesAndrewAssignment6.html">To-do List</a></li>
+				<li><a class="index_nav" href="HaynesAndrewAssignment7.html">Ghost Stories</a></li>
+				<li><a class="index_nav" href="HaynesAndrewFinalProject.html"></a></li>
+
+			</ul>
+		</div>
+		</div>
+
+
+
+
+
+	</div>
+	<div>
+		<section id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+			<img src="sudoku_before.jpg" height="300" width="300" alt="This is an image of a sudoku puzzle.">
+				<h4>Drag picture <br> here!</h4>
+		</section>
+
+		<h4 id="middle_header">Drag the picture on the right <br> to the picture above <br> to see the answer</h4>
+
+		<aside id="sudoku_right" ondrop="drop(event)" ondragover="allowDrop(event)">
+			<img src="sudoku_after.jpg" id="drag_pic" class="draggable_pic" height="300" width="300" alt="This is an image of a sudoku puzzle after it has been finished." draggable="true" ondragstart="drag(event)">
+		</aside>
+	</div><br>
+
+		<main id="sudoku_main">
+			<article class="sudoku_article">
+				<h4>Overview</h4>
+				<p>Sudoku is a very fun game that I enjoy playing from time to time. Whenever I have down-time, flying on an airplane, or just bored at work I can complete some sudoku puzzles. I really enjoy math so this is quite fun for me and also keeps me continually utilizing my critical thinking skills.</p>
+				<h4>Playing the Game</h4>
+				<p>The basic layout consists of a square table layout with a size of 9 cells high by 9 cells wide. From there it further separates the layout by splitting into 9 smaller squares that are 3 cells high by 3 cells wide.
+				 Each row and column can contain numbers 1-9, however they cannot be repeated. The smaller 3 x 3 blocks can only contain numbers 1-9 in each of them. 
+				While figuring out the puzzle, you want to get the numbers 1-9 in each row, each column, and each 3 x 3 block with no repetitions in either 3 of those areas. This is quite tough sometimes, as they make different difficulties of sudoku puzzles. 
+				</p>
+				<h4>Repeat</h4>
+				<p>Sudoku consists of a lot of repeating. I typically scan the puzzle from top-to-bottom and from left-to-right. This means that I begin in the top left, and begin moving right to see if I can figure out any of the cells. Once I finish the first row, I move on to the second row, and so-on so-forth until I reach the bottom. Once I reach the bottom, I do it all again…and sometimes again, and again!</p>
+				<h4>End result</h4>
+				<p>As the end result you would like to fill in every block with a number. When you think you are done, you need to check to make sure you did not have any repeated numbers. The most important result, of course, is that you did not fall asleep while completing your sudoku puzzle. Have fun!</p>
+		</article>
+	</main>
+	<footer class="sudoku_copy">
+		&copy;
+	</footer>
+
+</body>
+</html>

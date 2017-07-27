@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Ghost Stories</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Andrew Haynes">
+	<meta name="description" content="Ghost Stories">
+	<meta name="keywords" content="html,css, ghost, stories, Warren, FE Warren, ghost story">
+	<link rel="stylesheet" type="text/css" href="HaynesAndrew.css">
+</head>
+<body class="ghost_background">
+	<div id="nav">
+		<div id="menu_icon">
+			<div class="menu_icon"></div>
+			<div class="menu_icon"></div>
+			<div class="menu_icon"></div>
+		<div id="dropdown_menu">
+
+			<ul class="dropdown_items">
+				<li><a class="index_nav" href="HaynesAndrew_Index.html">Homepage</a></li>
+				<li><a class="index_nav" href="HaynesAndrewAssignment1.html">Banana Lumpia</a></li>
+				<li><a class="index_nav" href="HaynesAndrewAssignment2.html">SoloLearn</a></li>
+				<li><a class="index_nav" href="HaynesAndrewAssignment3.html">Growing Flowers</a></li>
+				<li><a class="index_nav" href="HaynesAndrewAssignment4_shell.html">Weather</a></li>
+				<li><a class="index_nav" href="HaynesAndrewAssignment5.html">Sudoku</a></li>
+				<li><a class="index_nav" href="HaynesAndrewAssignment6.html">To-do List</a></li>
+				<li><a class="index_nav" href="HaynesAndrewFinalProject.html"></a></li>
+
+			</ul>
+		</div>
+		</div>
+
+
+
+
+
+	</div>
+
+	<header class="ghost_header">F.E. Warren AFB Ghost Stories</header>
+
+	<section>
+	<h6 class="hidden">Disregard</h6>
+	<img class="center_pic" src="ghost_center_pic.jpg" alt="This image shows a cluster of images from FE Warren Air Force Base.">
+	</section>
+
+	<main class="ghost_main">
+		<p>FE Warren, or Francis E. Warren Air Force Base, was not only my first duty location, but is also Wyoming’s most haunted location. The base was first an Army Post from 1867 to 1947 when the Air Force took it over and now hosts the AF’s ICBM (Inter-continental ballistic missile) program. <br><br>
+		However, FE Warren is home to quite a few ghost stories and hauntings. One ghost sighting is of a cavalryman known to patrol the base at night. 
+		A ghost names Jeffrey, roams the ICBM museum on base, sometimes disabling the security alarms. There was once a working elevator in the museum, however it has been shut down because it has left passengers stranded several times. Maintenance workers still have not been able to figure out why this happens and state that there are no mechanical reasons. <br><br>
+		Another ghost sighting occurs at the camping area, where visitors hear sounds of a woman screaming. This is said to be the location of a once ghastly massacre between soldiers and a Native American woman. <br><br>
+		There are also buildings, such as the Security Forces building (which used to be the hospital) that are considered most haunted. The K9 working dogs refuse to enter the second floor of that building as well as the tunnel that once lead to the morgue. <br><br>
+		Creepy right?
+		</p>
+	</main>
+
+	<form id="ghost_form" action="http://ss1.ciwcertified.com/cgi-bin/process.pl" method="post" autocomplete="on" target="_blank">
+		First Name: <input type="text" name="firstname" minlength="4" required><br>
+		Last Name: <input type="text" name="lastname" minlength="4" required><br>
+		Date: <input type="text" name="number" placeholder="dd/mm/yyyy" pattern="\d{1,2}/\d{1,2}/\d{4}" required><br>
+		Time: <input type="text" name="time" placeholder="hhmm" required><br>
+		Email: <input id="email" type="email" name="email" placeholder="joeschmo@mail.com" pattern="^.+@.+$" required><br><br>
+
+
+		What year did FE Warren become an Air Force Base?<input type="text" name="date1" pattern="\d{4}" placeholder="yyyy"><br><br>
+		What locations are ghosts typically found?  
+		<input type="checkbox" name="housing" required>Housing
+		<input type="checkbox" name="outdoors" required>Outdoors
+		<input type="checkbox" name="base lake">Base Lake
+		<input type="checkbox" name="camping" required>Camping Area<br><br>
+
+		The base museum <input type="text" name="fillin" required> is no longer in service due to it stranding passengers between floors.<br><br>
+
+		At which location do people hear a woman's screams? <input type="text" name="screams" required><br><br>
+
+
+		What is the name of the ghost who haunts the base museum?<input type="text" name="ghost" list="names" required>
+			<datalist id="names">
+				<option value="Benny">
+				<option value="Jeffrey">
+				<option value="John">
+			</datalist>
+
+		Bonus: How many ghosts have you encountered in your lifetime?  0<input type="range" name="numghosts" min="0" max="20" value="0">20<br>
+		Want to upload a file about ghost experiences?<br>
+		<input type="file" name="fileupload"><br><br>
+
+		<textarea placeholder="Add additional comments here!" cols="25" rows="5"></textarea><br><br>
+
+		<input type="submit" name="summit">
+		<input type="reset" name="reset">
+	</form>
+
+	<footer class="sudoku_copy">
+		&copy;
+	</footer>
+</body>
+</html>
