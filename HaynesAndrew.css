@@ -74,14 +74,13 @@ a.index_nav {
 	font-weight: bolder;
 	font-size: 18px;
 	z-index: 3;
-	text-align: center;
 }
 body.body {
 	background-image: url(baking.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	height: 700px;
+	height: 1500px;
 	width: 100%;
 }
 body.body2 {
@@ -89,7 +88,7 @@ body.body2 {
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	height: 700px;
+	height: 1500px;
 	width: 100%;
 }
 #intro {
@@ -270,7 +269,7 @@ li.lumpia_para {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 700px;
+	height: 1500px;
 }
 @font-face {
 	font-family: custFont;
@@ -407,6 +406,7 @@ li.lumpia_para {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	width: 100%;
+	height: 1500px;
 }
 .weathershell_body {
 	background-image: url(tornadobg.jpg);
@@ -414,7 +414,7 @@ li.lumpia_para {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 700px;
+	height: 1500px;
 }
 @font-face {
 	font-family: modern;
@@ -521,7 +521,7 @@ li.lumpia_para {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 700px;
+	height: 1500px;
 }
 .wx_header {
 	color: white;
@@ -594,7 +594,7 @@ li.lumpia_para {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 2900px;
+	height: 1500px;
 }
 .sudoku_header {
 	visibility: hidden;
@@ -736,6 +736,7 @@ li.lumpia_para {
 #todo_body {
 	background-image: url(todo_bg2.png), url(woodbg.jpg);
 	background-repeat: no-repeat;
+	height: 1500px;
 }
 #display {
 	display: inline-block;
@@ -819,6 +820,7 @@ datalist {
 	background-image: url(FE_bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	height: 1500px;
 }
 .ghost_header {
 	text-align: center;
