@@ -52,6 +52,7 @@
 #index {
 	background-image: url(backgroundImage.jpg);
 	background-size: cover;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	height: 2000px;
 	width: 100%;
@@ -736,6 +737,8 @@ li.lumpia_para {
 #todo_body {
 	background-image: url(todo_bg2.png), url(woodbg.jpg);
 	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 	height: 2000px;
 }
 #display {
@@ -819,6 +822,7 @@ datalist {
 .ghost_background {
 	background-image: url(FE_bg.jpg);
 	background-size: cover;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	height: 2000px;
 }
