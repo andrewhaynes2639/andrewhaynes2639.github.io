@@ -93,7 +93,7 @@ body.body2 {
 	width: 100%;
 }
 #intro {
-	background-color: rgba(0, 0, 0, .4);
+	background-color: rgba(0, 0, 0, .25);
 	margin: 180px auto 50px auto;
 	width: 80%;
 	height: 450px;
@@ -107,7 +107,7 @@ h1.welcome {
 	font-weight: bold;
 	line-height: 200px;
 	margin-bottom: 0px;
-	padding: 0px auto;
+	padding: 0px;
 	width: 100%;
 }
 h1.welcome2 {
@@ -116,7 +116,7 @@ h1.welcome2 {
 	font-weight: bold;
 	margin: 3px auto 3px auto;
 	width: 100%;
-	padding: 3px auto;
+	padding: 3px;
 }
 .welcome:hover {
 	font-size: 3em;
@@ -881,4 +881,17 @@ datalist {
 	margin: 0px;
 	padding: 0px;
 }
-
+.github_account_background {
+	background-image: url(github_bg.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 2000px;
+}
+.github_repository_background {
+	background-image: url(github_bg2.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 2000px;
+}
