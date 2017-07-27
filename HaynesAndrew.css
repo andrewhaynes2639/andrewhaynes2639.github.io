@@ -38,7 +38,7 @@
 }
 .dropdown_items li {
 	display: block;
-	height: 65px;
+	height: 60px;
 }
 .dropdown_items li:hover {
 	background-color: rgba(0, 100, 0, .25);
@@ -56,14 +56,23 @@
 	height: 1500px;
 	width: 100%;
 }
+.nav_name {
+	font-family: disney;
+	width: 90%;
+	position: absolute;
+	top: 0;
+	left: 15%;
+	margin-top: 0px;
+	font-size: 4.5em;
+}
 a.index_nav {
 	text-decoration: none;
 	color: white;
-	line-height: 60px;
-	margin-left: 12px;
+	line-height: 90px;
+	margin-left: 10px;
 	margin-right: 10px;
-	font-weight: bold;
-	font-size: 20px;
+	font-weight: bolder;
+	font-size: 18px;
 	z-index: 3;
 	text-align: center;
 }
