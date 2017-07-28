@@ -40,9 +40,9 @@
 <script>
 var x = document.getElementById("location");
 
-function getCurrentPostion() {
+function getLocation() {
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPostion(showPosition);
+        navigator.geolocation.getCurrentPosition(showPosition);
     } else { 
         x.innerHTML = "Geolocation is not supported by this browser.";
     }
