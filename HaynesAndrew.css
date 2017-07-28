@@ -902,3 +902,21 @@ datalist {
 	color: white;
 	font-size: 20px;
 }
+.account_heading {
+	color: white;
+	background-color: rgba(0, 0, 0, .5);
+	width: 70%;
+	height: 150px;
+	text-align: center;
+	font-size: 3em;
+	border-radius: 40px;
+	margin: 150px auto 5px auto;
+}
+.account_heading h4 {
+	padding: 10px 5px 10px 5px;
+}
+.account_heading_pic {
+	height: 200px;
+	margin: 20px auto 5px auto;
+	text-align: center;
+}

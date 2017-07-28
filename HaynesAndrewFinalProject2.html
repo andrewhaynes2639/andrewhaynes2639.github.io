@@ -31,6 +31,29 @@
 		</div>
 		</div>
 
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="location"></p>
+
+<script>
+var x = document.getElementById("location");
+
+function getCurrentPostion() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPostion(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
 	</div>
 
 </body>
