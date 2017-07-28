@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Github Repository</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Andrew Haynes">
+	<meta name="description" content="Github Repository">
+	<meta name="keywords" content="html,css, github, repository">
+	<link rel="stylesheet" type="text/css" href="HaynesAndrew.css">
+</head>
+<body class="github_repository_background">
+	<div id="nav">
+		<div id="menu_icon">
+			<div class="menu_icon"></div>
+			<div class="menu_icon"></div>
+			<div class="menu_icon"></div>
+		<div id="dropdown_menu">
+
+			<ul class="dropdown_items">
+				<li><a class="index_nav" href="HaynesAndrew_Index.html">Homepage</a></li>
+				<li><a class="index_nav" href="HaynesAndrewAssignment1.html">Banana Lumpia</a></li>
+				<li><a class="index_nav" href="HaynesAndrewAssignment2.html">SoloLearn</a></li>
+				<li><a class="index_nav" href="HaynesAndrewAssignment3.html">Growing Flowers</a></li>
+				<li><a class="index_nav" href="HaynesAndrewAssignment4shell.html">Weather</a></li>
+				<li><a class="index_nav" href="HaynesAndrewAssignment5.html">Sudoku</a></li>
+				<li><a class="index_nav" href="HaynesAndrewAssignment6.html">To-do List</a></li>
+				<li><a class="index_nav" href="HaynesAndrewAssignment7.html">Ghost Stories</a></li>
+				<li><a class="index_nav" href="HaynesAndrewFinalProject1.html">Github Account</a></li>
+
+			</ul>
+		</div>
+		</div>
+
+		<button onclick="getLocation()">Click Me</button>
+		<p id="location"></p>
+
+
+<script>
+var x = document.getElementById("location");
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude; 
+}
+</script>
+
+	</div>
+
+</body>
+</html>
