@@ -927,7 +927,7 @@ datalist {
 .account_footer {
 	position: relative;
 	width: 90%;
-	margin: 950px auto 5px auto;
+	margin: 650px auto 5px auto;
 	text-align: center;
 	color: white;
 	font-size: 25px;
@@ -954,5 +954,12 @@ datalist {
 	border-radius: 25px;
 	color: white;
 	font-family: computer;
+}
+.account_thanks {
+	padding: 15px;
+	border-radius: 20px;
+	width: 98%;
+	height: 350px;
+	margin: 200px auto 10px auto;
 }
 
