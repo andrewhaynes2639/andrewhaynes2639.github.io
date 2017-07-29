@@ -667,6 +667,10 @@ li.lumpia_para {
 	font-family: later;
 	src: url(later.ttf);
 }
+@font-face {
+	font-family: computer;
+	src: url(computer.ttf);
+}
 #sudoku_main {
 	position: relative;
 	width: 90%;
@@ -903,7 +907,7 @@ datalist {
 }
 .account_heading {
 	color: white;
-	background-color: rgba(0, 0, 0, .5);
+	background-color: rgba(0, 0, 0, .7);
 	width: 70%;
 	height: 150px;
 	text-align: center;
@@ -913,6 +917,7 @@ datalist {
 }
 .account_heading h4 {
 	padding: 10px 5px 10px 5px;
+	font-family: computer;
 }
 .account_heading_pic {
 	height: 200px;
@@ -936,17 +941,18 @@ datalist {
 	font-family: later;
 	font-size: 27px;
 	color: white; 
-	background-color: rgba(0, 0, 0, .50);
+	background-color: rgba(0, 0, 0, .70);
 	padding: 15px 15px 15% 15px;
 	border-radius: 10px;
 }
 .account_article {
-	background-color: rgba(0, 0, 0, .5);
-	width: 50%;
+	background-color: rgba(0, 0, 0, .7);
+	width: 75%;
 	margin: 20px auto;
 	font-size: 2em;
 	padding: 15px 5%;
 	border-radius: 25px;
 	color: white;
+	font-family: computer;
 }
 
