@@ -956,9 +956,8 @@ datalist {
 	font-family: computer;
 }
 .account_thanks {
-	padding: 15px;
 	border-radius: 20px;
-	width: 98%;
+	width: 100%;
 	height: 350px;
 	margin: 200px auto 10px auto;
 }
