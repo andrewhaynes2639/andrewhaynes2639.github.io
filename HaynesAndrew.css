@@ -898,7 +898,6 @@ datalist {
 #location {
 	width: 300px;
 	height: 200px;
-	background-color: rgba(0, 0, 0, .50);
 	color: white;
 	font-size: 20px;
 }
@@ -920,3 +919,34 @@ datalist {
 	margin: 20px auto 5px auto;
 	text-align: center;
 }
+.account_footer {
+	position: relative;
+	width: 90%;
+	margin: 15px auto 5px auto;
+	text-align: center;
+	color: white;
+	font-size: 25px;
+	background-color: rgba(0, 0, 0, .75);
+	height: 25px;
+	border-radius: 10px;
+}
+.account_main {
+	width: 85%;
+	margin: 50px auto 10px auto;
+	font-family: later;
+	font-size: 27px;
+	color: white; 
+	background-color: rgba(0, 0, 0, .50);
+	padding: 15px 15px 15px 15px;
+	border-radius: 10px;
+}
+.account_article {
+	background-color: rgba(0, 0, 0, .5);
+	width: 50%;
+	margin: 20px auto;
+	font-size: 2em;
+	padding: 15px 5%;
+	border-radius: 25px;
+	color: white;
+}
+

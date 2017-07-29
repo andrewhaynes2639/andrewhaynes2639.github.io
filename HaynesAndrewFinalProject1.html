@@ -8,7 +8,7 @@
 	<meta name="keywords" content="html,css, github, account">
 	<link rel="stylesheet" type="text/css" href="HaynesAndrew.css">
 </head>
-<body class="github_account_background">
+<body class="github_account_background" onload="currentLocation()">
 	<div id="nav">
 		<div id="menu_icon">
 			<div class="menu_icon"></div>
@@ -16,6 +16,7 @@
 			<div class="menu_icon"></div>
 		<div id="dropdown_menu">
 
+		<nav>
 			<ul class="dropdown_items">
 				<li><a class="index_nav" href="HaynesAndrew_Index.html">Homepage</a></li>
 				<li><a class="index_nav" href="HaynesAndrewAssignment1.html">Banana Lumpia</a></li>
@@ -26,19 +27,88 @@
 				<li><a class="index_nav" href="HaynesAndrewAssignment6.html">To-do List</a></li>
 				<li><a class="index_nav" href="HaynesAndrewAssignment7.html">Ghost Stories</a></li>
 				<li><a class="index_nav" href="HaynesAndrewFinalProject2.html">Github Repository</a></li>
-
 			</ul>
+		</nav>
+
 		</div>
 		</div>
 
 	</div>
-		<section class="account_heading">
+		<header class="account_heading">
 			<h4>Create your Github<br>account today!</h4>
-		</section>
+		</header>
 
 		<aside class="account_heading_pic">
 			<img src="githubicon.jpg" style="border-radius: 45px;">
 		</aside>
 
+
+
+
+
+		<article class="account_article">
+			Making a Github account is simple. All you have to do is provide them with your name, email, and a username (which they will verify it is available). Once you provide them with your personal information, you will receive an email to verify your identity. Once verified, you will have access to a plethora of other coder’s content while being able to upload and view your own data, webpages, and programs.
+		</article>
+
+
+		<main class="account_main">
+			<form id="account_form" action="http://ss1.ciwcertified.com/cgi-bin/process.pl" method="post" autocomplete="on" target="_blank">
+		<div style="height: 250px; width: 100%;">
+			<div style="float: left; width: 49%; height: 250px;">
+				<h2>Member's Location:</h2>
+				Latitude: <input id="latitude" type="text" name="latitude" value=""><br>
+				Longitude: <input id="longitude" type="text" name="longitude" value=""><br>
+				Elevation: <input id="elevation" type="text" name="elevation" value=""><br>
+			</div>
+			<div style="float: left; width: 49%; height: 250px;">
+				<img src="youarehere.jpg" style="width: 100%; height: 100%; margin: 3% auto; border-radius: 10px;">
+			</div>
+		</div><br>
+
+
+		<div style="width: 100%;">
+				<h2>Member's Information:</h2>
+				First Name: <input type="text" name="firstname" placeholder="Enter First Name" required><br>
+				Last Name: <input type="text" name="lastname" placeholder="Enter Last Name" required><br>
+				Email: <input type="text" name="email" placeholder="Enter Email Address"><br>
+				Profile Name: <input type="text" name="profilename" placeholder="Requested Profile Name"><br>
+				<input type="submit" name="summit">
+				<input type="reset" name="reset">
+		</div>
+			</form>
+		</main>
+
+
+
+
+
+
+
+
+
+
+
+		<footer class="account_footer"><P>FOR LEARNING USE ONLY. NOT THE ACTUAL WEBSITE.</P></footer>
+
+<script>
+var x = document.getElementById("latitude");
+var y = document.getElementById("longitude");
+var z = document.getElementById("elevation");
+
+function currentLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.value = "Latitude:  " + parseFloat(position.coords.latitude).toFixed(2) + " DEG";
+    y.value =  "Longitude:  " + parseFloat(position.coords.longitude).toFixed(2) + " DEG";
+    z.value = "Elevation:  " + parseFloat(position.coords.altitude/3.28).toFixed(2) + "FT";
+
+}
+</script>
 </body>
 </html>

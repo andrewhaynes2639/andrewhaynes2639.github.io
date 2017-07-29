@@ -16,6 +16,7 @@
 			<div class="menu_icon"></div>
 		<div id="dropdown_menu">
 
+		<nav>
 			<ul class="dropdown_items">
 				<li><a class="index_nav" href="HaynesAndrew_Index.html">Homepage</a></li>
 				<li><a class="index_nav" href="HaynesAndrewAssignment1.html">Banana Lumpia</a></li>
@@ -28,31 +29,9 @@
 				<li><a class="index_nav" href="HaynesAndrewFinalProject1.html">Github Account</a></li>
 
 			</ul>
+		</nav>
 		</div>
 		</div>
-
-<p>Click the button to get your coordinates.</p>
-
-<button onclick="getLocation()">Try It</button>
-
-<p id="location"></p>
-
-<script>
-var x = document.getElementById("location");
-
-function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    } else { 
-        x.innerHTML = "Geolocation is not supported by this browser.";
-    }
-}
-
-function showPosition(position) {
-    x.innerHTML = "Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude;
-}
-</script>
 
 	</div>
 
